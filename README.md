@@ -1,66 +1,81 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Laravel Vue Admin Dashboard Starter Kit
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Sebuah starter kit modern untuk membangun admin dashboard menggunakan Laravel, Vue.js, dan shadcn/vue.
 
-## About Laravel
+## Fitur
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- 🛠️ Laravel 11.x
+- ⚡ Vue 3 dengan Composition API
+- 🎨 shadcn/vue untuk komponen UI yang konsisten dan mudah dikustomisasi
+- 🔒 Autentikasi pengguna bawaan
+- 📊 Layout dashboard yang responsif
+- 🌓 Mode gelap/terang (Soon)
+- 🚀 Vite untuk pengembangan yang cepat
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Prasyarat
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- PHP 8.1+
+- Composer
+- Node.js 16+
+- npm atau yarn
 
-## Learning Laravel
+## Instalasi
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+1. Clone repositori ini:
+git clone https://github.com/username/laravel-vue-admin-dashboard.git
+Copy
+2. Pindah ke direktori proyek:
+cd laravel-vue-admin-dashboard
+Copy
+3. Instal dependensi PHP:
+composer install
+Copy
+4. Instal dependensi JavaScript:
+npm install
+Copy
+5. Salin file `.env.example` menjadi `.env` dan sesuaikan konfigurasi database:
+cp .env.example .env
+Copy
+6. Generate kunci aplikasi:
+php artisan key:generate
+Copy
+7. Jalankan migrasi database:
+php artisan migrate
+Copy
+8. Kompilasi aset:
+npm run dev
+Copy
+## Penggunaan
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+1. Jalankan server pengembangan Laravel:
+php artisan serve
+Copy
+2. Dalam terminal terpisah, jalankan Vite untuk hot-reloading:
+npm run dev
+Copy
+3. Buka browser dan akses `http://localhost:8000`
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Struktur Proyek
 
-## Laravel Sponsors
+- `app/` - Logika backend Laravel
+- `resources/js/` - Komponen Vue dan logika frontend
+- `resources/views/` - Template Blade Laravel
+- `routes/` - Definisi rute Laravel
+- `public/` - Aset publik
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+## Kustomisasi
 
-### Premium Partners
+- Komponen shadcn/vue dapat dikustomisasi di `resources/js/components/ui/`
+- Tema dapat diubah di `resources/js/lib/utils.ts`
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+## Kontribusi
 
-## Contributing
+Kontribusi selalu diterima! Silakan buka issue atau submit pull request.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## Lisensi
 
-## Code of Conduct
+[MIT License](LICENSE.md)
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## Kredit
 
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Starter kit ini terinspirasi oleh komunitas Laravel dan Vue.js, serta proyek shadcn/ui.
